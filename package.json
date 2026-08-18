@@ -14,8 +14,10 @@
     "dev:desktop": "npm run build:electron && concurrently \"npm run dev\" \"wait-on http://localhost:5173 && npm run start:electron\""
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
     "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "react-dom": "^19.2.8",
+    "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

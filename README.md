@@ -17,4 +17,5 @@ If you are developing a production application, we recommend using TypeScript wi
 
 # To Run
 npm i -D concurrently wait-on
+
 npm run dev:desktop

@@ -21,11 +21,18 @@ function Playground() {
       }}
     >
       {/* Temporary Files */}
-      <div>
+      <div 
+        style={{
+          display: "flex",
+          gap: "10px",
+          padding: "10px",
+          backgroundColor: "#2c2c2c",
+          border: "1px solid #1f1d1dff",
+        }}
+      >
         <button onClick={() => openFile("main.ts")}>
           main.ts
         </button>
-
         <button onClick={() => openFile("App.tsx")}>
           App.tsx
         </button>

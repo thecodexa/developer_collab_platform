@@ -1,17 +1,17 @@
-import {useState} from "react";
+import { useState } from "react";
 
 function Playground() {
-  const [tabs,setTabs] = useState<string[]>([]);
-  
+  const [tabs, setTabs] = useState<string[]>([]);
+
   function openFile(fileName: string) {
-    setTabs([...tabs,fileName]);
+    setTabs([...tabs, fileName]);
   }
 
   function closeTab(fileName: string) {
     setTabs(tabs.filter((tab) => tab !== fileName));
   }
 
-    return (
+  return (
     <div
       style={{
         width: "100%",
@@ -22,17 +22,11 @@ function Playground() {
     >
       {/* Temporary Files */}
       <div>
-        <button onClick={() => openFile("main.ts")}>
-          main.ts
-        </button>
+        <button onClick={() => openFile("main.ts")}>main.ts</button>
 
-        <button onClick={() => openFile("App.tsx")}>
-          App.tsx
-        </button>
+        <button onClick={() => openFile("App.tsx")}>App.tsx</button>
 
-        <button onClick={() => openFile("README.md")}>
-          README.md
-        </button>
+        <button onClick={() => openFile("README.md")}>README.md</button>
       </div>
 
       {/* Tabs */}

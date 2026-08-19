@@ -1,6 +1,6 @@
 function SidebarTwo() {
   return (
-    <div className="w-full h-full bg-blue-700"></div>
+    <div className="w-67 h-full bg-blue-700"></div>
   )
 }
 export default SidebarTwo;
